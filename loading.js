@@ -25,5 +25,5 @@ window.onload = function () {
     setTimeout(function () {
         loadingScreen.style.display = "none";  // Ukrywa loading screen
         main.style.display = "block";  // Pokazuje główną treść
-    }, 3000); // Czas trwania animacji fade-out (dopasuj według potrzeby)
+    }, 3000); // Czas trwania animacji fade-out
 };

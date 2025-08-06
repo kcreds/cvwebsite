@@ -47,7 +47,7 @@ function selectButton(buttonType) {
     }
   }
 
-// Domyślnie wybierz opcję "Własne"
+// Domyślnie wybierz opcję
 window.addEventListener('DOMContentLoaded', (event) => {
     selectButton('commercial');
 });
