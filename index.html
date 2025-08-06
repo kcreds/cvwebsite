@@ -11,6 +11,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <link href="assets/Icons/favicon.png" rel="icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script type="importmap">
@@ -173,7 +174,7 @@
                 <div class="projects w-full">
                     <div id="slide1-own" class="projects-item relative w-full">
                         <div class="flex justify-start p-2 w-full h-full text-center">
-                            <div class="text-center text-center">
+                            <div class="text-center">
                                 <h2 class="text-5xl tlt font-semibold project-title">newhouse.</h2>
                                 <p class="description">Jest to projekt prostej aplikacji, do zarządzania ogłoszeniami nieruchomości.</p>
                                 <h2 class="text-2xl tlt font-semibold mt-2">Funkcjonalności</h2>
@@ -184,7 +185,7 @@
                                     <li>możliwość dodania własnego szablonu do wyświetlania ogłoszeń nieruchomości</li>
                                 </ul>
                                 <div class="mt-10 items-center">
-                                    <a href="https://github.com/kcreds/newhouse." class="btn btn-outline custom-link-btn" target="_blank">GitHub</a>
+                                    <a href="https://github.com/kcreds/newhouse." class="btn btn-outline custom-link-btn" target="_blank">GitHub <i class="fa-solid fa-up-right-from-square"></i></a>
                                 </div>
                             </div>
                             <img src="https://raw.githubusercontent.com/kcreds/newhouse./refs/heads/main/SC/1.jpg" class="main-img object-cover md:block hidden ml-auto" alt="Newhouse project">
@@ -204,8 +205,29 @@
                                     Zamknięty system internetowy do <span class="color-red">automatyzacji</span> i <span class="color-red">optymalizacji</span> sprzedaży online na platformach takich jak Allegro, Erli i innych. System nie tylko zarządza ofertami sprzedaży, ale również usprawnia proces wystawiania nowych ofert, oszczędzając czas i minimalizując błędy. Dzięki zintegrowanym funkcjom automatyzuje wysyłkę przesyłek do klientów oraz zamawianie sprzedanych produktów z hurtowni.
                                     <br>
                                     <br>
-                                    Dodatkowo, aplikacja wspiera zarządzanie własnymi magazynami, pomagając w monitorowaniu stanu zapasów i zarządzaniu procesem magazynowym. Ułatwia to kontrolę nad dostępnością produktów oraz szybkie reagowanie na zmiany w stanach magazynowych, co przekłada się na efektywniejsze zarządzanie całym procesem sprzedaży.
+                                    Jest to projekt, któremu poświęciłem najwięcej czasu (+2 lata), rozwijając go i utrzymując. Poniżej znajduje się kilka najważniejszych funkcji, za które odpowiadam:
                                 </p>
+                                <ul class="description list text-justify">
+                                    <li>
+                                        <b class="color-red">Masowe wystawianie ofert:</b> Automatyczne wystawianie ofert na Allegro dla wybranych kont. System wykorzystuje dane z API dostawców oraz produktyzację Allegro.
+                                    </li>
+                                    <li>
+                                        <b class="color-red">Automatyzacja przesyłek:</b> Nadawanie przesyłek dla różnych kurierów (DPD, InPost, Poczta Polska, Wysyłam z Allegro itp.) w oparciu o wymiary produktów lub indywidualne ustawienia klienta.
+                                    </li>
+                                    <li>
+                                        <b class="color-red">Automatyczne zamawianie:</b> System zamawia produkty od kilku dostawców na podstawie stanów magazynowych i liczby zamówień. W przypadku braku dostępności, zamawia zamienniki od innych dostawców, zgodnie z logiką biznesową klienta.
+                                    </li>
+                                    <li>
+                                        <b class="color-red">Automatyzacja dropshippingu:</b> System automatyzuje zamówienia dropshippingowe u wybranych dostawców, ograniczając zaangażowanie użytkownika do minimum.
+                                    </li>
+                                    <li>
+                                        <b class="color-red">API dla aplikacji mobilnej:</b> Napisanie API dla aplikacji mobilnej, która umożliwia przyjmowanie zamówionego towaru, podgląd zamówień, skanowanie oraz zarządzanie produktami itd.
+                                    </li>
+                                    <li>
+                                        <b class="color-red">Integracje:</b> Wdrożenie integracji z hurtowniami i innymi dostawcami usług.
+                                    </li>
+                                </ul> 
+                                <a href="https://copentro.com/portfolio/autodor/" target="_blank" class="btn btn-outline custom-link-btn expand-btn mt-4">Więcej <i class="fa-solid fa-up-right-from-square"></i></a>
                             </div>
                             <img src="image/projects/autodor/main.webp" class="main-img object-cover md:block hidden ml-auto md:w-1/2" alt="">
                         </div>
@@ -217,7 +239,22 @@
                                 <h2 class="text-5xl tlt font-semibold project-title">Nowaczyński CRM</h2>
                                 <p class="description">
                                     Zamknięty system internetowy do obsługi zamówień oraz sprzedaży, który optymalizuje proces składania i przechowywania zamówień. Dzięki zintegrowanym funkcjom umożliwia szybkie i efektywne tworzenie zamówień, zarządzanie nimi oraz śledzenie statusów.
+                                    <br>
+                                    <br>
+                                    Przy tym projekcie byłem od samego początku, wspierając jego rozwój i utrzymanie. Wśród kluczowych funkcji, które zaimplementowałem, znajdują się:
                                 </p>
+                                <ul class="description list text-justify">
+                                    <li>
+                                        Obsługa szczegółowych informacji o produktach.
+                                    </li>
+                                    <li>
+                                        Eksport szczegółów zamówień do plików PDF dla klientów i produkcji.
+                                    </li>
+                                    <li>
+                                        Inne, mniejsze i większe rozwiązania, które usprawniły działanie systemu.
+                                    </li>
+                                </ul>
+                                <a href="https://copentro.com/portfolio/cukiernia-nowaczynski/" target="_blank" class="btn btn-outline custom-link-btn expand-btn mt-4">Więcej <i class="fa-solid fa-up-right-from-square"></i></a>
                             </div>
                             <img src="image/projects/nowaczynski/main.webp" class="main-img object-cover md:block hidden ml-auto ml-2 md:w-1/2" alt="">
                         </div>
